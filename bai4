@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,q,k;
+    cin>>n>>q;
+    
+    while (n--){
+        cin>>k;
+        int num[k];
+        int pos[num[k]];
+        for (int i=0;i<k;i++){
+            num[i]=i;
+            cin>>pos[num[i]];
+        }
+        if (q>0){
+            int i; cin>>i;
+            int j; cin>>j;
+            cout<<pos[num[i]+j]<<endl;
+        }else n=-1;
+        }
+    return 0;
+}
